@@ -8,7 +8,7 @@ const config = {
   // 🔐 Passcode Page
   correctPasscode: "0909", // Change this to any 4-digit code (the passcode for access)
   passcodeTitle: "Enter Passcode", // Title displayed on the passcode entry page
-  successMessage: "yayyy <3", // Message shown upon successful passcode entry
+  successMessage: "yayyy <3 ", // Message shown upon successful passcode entry
   redirectMessage: "Redirecting...", // Message displayed while redirecting after success
   incorrectPasscodeMessage: "Incorrect passcode. Hint: Our anniversary date!", // Message shown for incorrect passcode
   cancelButtonText: "Cancel", // Text for the cancel button
