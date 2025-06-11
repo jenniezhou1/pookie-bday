@@ -147,3 +147,17 @@ overflow-x: hidden;
     /* top-right */
     linear-gradient(148.7deg, transparent 50%, var(--shadow) 50%, var(--base) 51%) 150px 0px / 150px 90px no-repeat;
 }
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(255, 105, 180, 0.4), 0 0 24px rgba(255, 105, 180, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.6), 0 0 30px rgba(255, 105, 180, 0.4);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+  border-radius: 1rem;
+}

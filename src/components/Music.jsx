@@ -8,6 +8,7 @@ import config from "./config"; // Import config file
 const imageFiles = import.meta.glob("../assets/music/*.png");
 
 function Music() {
+  const [selectedSongUrl, setSelectedSongUrl] = useState(null);
   const navigate = useNavigate();
   const [songs, setSongs] = useState([]);
   const containerRef = useRef(null);
@@ -20,12 +21,16 @@ function Music() {
             const imagePath = `../assets/music/${index + 1}.png`; // Ensure correct ordering from bottom to top
             if (imageFiles[imagePath]) {
               const imageModule = await imageFiles[imagePath]();
+
+              console.log('spotifyUrl:', song.spotifyUrl);
+
               return {
                 albumCover: imageModule.default,
                 title: song.title || "No Title",
                 artist: song.artist || "Unknown Artist",
                 left: song.left || "0%",
                 top: song.top || "0%",
+                spotifyUrl: song.spotifyUrl || null
               };
             }
             return null;
@@ -56,6 +61,7 @@ function Music() {
               }}
               drag
               dragConstraints={containerRef}
+              onClick={() => setSelectedSongUrl(song.spotifyUrl)}
             >
               <div className="bg-white/10 backdrop-blur-lg rounded-xl p-4 flex items-center gap-4 w-56 h-[4rem]">
                 <div className="w-12 h-12 flex-shrink-0">
@@ -73,6 +79,35 @@ function Music() {
             </motion.div>
           ))}
         </div>
+
+        {selectedSongUrl && (
+          <motion.div
+          className="w-full mt-8 flex flex-col items-center"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          >
+          <div className="w-full mt-2 flex flex-col items-center px-4">
+            <div className="bg-white/20 backdrop-blur-lg p-4 rounded-2xl shadow-lg w-[90%] max-w-md flex flex-col items-center">  
+              <iframe
+                className="shadow-2xl animate-pulse-glow"
+                style={{ borderRadius: "12px", border: "none" }}
+                src={selectedSongUrl}
+                width="90%"
+                height="152"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              />
+              <button
+                onClick={() => setSelectedSongUrl(null)}
+                className="absolute top-1 right-4 z-50 text-sm bg-pink-600 hover:bg-pink-700 text-white rounded-full px-4 py-1 shadow-lg transition"
+              >
+                𝗫
+              </button>
+            </div>
+          </div>
+          </motion.div>
+        )}
 
         {/* Navigation Button */}
         <div className="flex justify-center w-full mt-4 mb-4">

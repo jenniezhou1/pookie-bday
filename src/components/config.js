@@ -52,48 +52,56 @@ const config = {
       artist: "Shordie Shordie", // Artist of the song
       left: "5%", // Positioning on the page
       top: "5%", // Positioning on the page
+      spotifyUrl: "https://open.spotify.com/embed/track/3bjW6TTjHKtMn9b0Q1D07I?utm_source=generator"
     },
     {
       title: "Love Songs",
       artist: "Kaash Paige",
       left: "40%",
       top: "15%",
+      spotifyUrl: "https://open.spotify.com/embed/track/6qL5UWxRSQYml9O99ozoLv?utm_source=generator"
     },
     {
       title: "Feels Like (La La La)",
       artist: "Repiet, Julia Kleijn",
       left: "15%",
       top: "40%",
+      spotifyUrl: "https://open.spotify.com/embed/track/66xH0ZJHR3GzjXdTWfpuCP?utm_source=generator"
     },
     {
       title: "From Time",
       artist: "Drake, Jhene Aiko",
       left: "30%",
       top: "75%",
+      spotifyUrl: "https://open.spotify.com/embed/track/0GaBIpyHvytM1UBYmqXu08?utm_source=generator"
     },
     {
       title: "Best Friend - Remix",
       artist: "50 Cent, Olivia",
       left: "5%",
       top: "65%",
+      spotifyUrl: "https://open.spotify.com/embed/track/34CL7BzCPoHLNT5tE3pHwq?utm_source=generator"
     },
     {
       title: "Never Lose You",
       artist: "Kalan.FrFr",
       left: "25%",
       top: "90%",
+      spotifyUrl: "https://open.spotify.com/embed/track/2S16czIeUR0vS7fwq5Fv7T?utm_source=generator"
     },
     {
       title: "feel U luv Me",
       artist: "Knock2",
       left: "35%",
       top: "50%",
+      spotifyUrl: "https://open.spotify.com/embed/track/0xDSZ754ZOdthmF784uuE5?utm_source=generator"
     },
     {
       title: "Oakland Pt. 2",
       artist: "Karri",
       left: "10%",
       top: "25%",
+      spotifyUrl: "https://open.spotify.com/embed/track/53ZSD18jfaGFqSnj4FL8Lq?utm_source=generator"
     },
   ],
 
@@ -173,6 +181,7 @@ const config = {
   correctSearchQueries: [
     "How long have we been together?", // Example of a correct search query
     "how long have we been together", // Another example of a correct search query
+    "how long have we been together?",
   ],
 };
 
