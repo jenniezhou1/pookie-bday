@@ -8,18 +8,18 @@ const config = {
   // 🔐 Passcode Page
   correctPasscode: "0909", // Change this to any 4-digit code (the passcode for access)
   passcodeTitle: "Enter Passcode", // Title displayed on the passcode entry page
-  successMessage: "Yayy!! :)", // Message shown upon successful passcode entry
+  successMessage: "yayyy <3", // Message shown upon successful passcode entry
   redirectMessage: "Redirecting...", // Message displayed while redirecting after success
-  incorrectPasscodeMessage: "Incorrect passcode. Hint: our anniversary date!", // Message shown for incorrect passcode
+  incorrectPasscodeMessage: "Incorrect passcode. Hint: Our anniversary date!", // Message shown for incorrect passcode
   cancelButtonText: "Cancel", // Text for the cancel button
 
   // 🔍 Question Page
   searchPlaceholder: "Search Google or type a URL", // Placeholder text in the search input
   trendingTitle: "Trending searches", // Title for the trending searches section
   trendingSearches: [
-    "Why is my bf so cute?", // Example trending search query
-    "Why does Rheina love him more?", // Another example query
-    `Rheina's birthdate (coz her bf forgets)`, // A personalized trending search
+    "Can I marry someone who I met at lab?", // Example trending search query
+    "Am I dramatic or is he just wrong?", // Another example query
+    `Is it normal that he forgets what I just said... 5 seconds ago?`, // A personalized trending search
   ],
   proTip: 'Pro tip: try searching "How long have we been together?" ;)', // Helpful tip for users
 
