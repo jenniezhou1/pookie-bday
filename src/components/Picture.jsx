@@ -45,6 +45,7 @@ function Picture() {
         <h1 className="text-2xl sm:text-2xl font-bold -mb-4 drop-shadow-lg text-white text-center">
           {config.pictureTitle}
         </h1>
+        
         <Carousel>
           {pictures.map(({ Image, title, description }, index) => (
             <ImageCard
