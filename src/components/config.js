@@ -154,7 +154,7 @@ const config = {
   
 
   // 💌 Love Letter Page
-  loveLetterMessage: "your request of a 'ten page paper' of why I love you will be given in person 🙄🫶🏼", // Message displayed on the love letter page
+  loveLetterMessage: "your request of a 'ten page paper' of why i love you will be given in person 🙄🫶🏼", // Message displayed on the love letter page
 
   // 🎇 Closing Page
   closingMessage: "forever blessed to be loved by you. happy 23rd to my best friend!!! <3", // Closing message displayed
